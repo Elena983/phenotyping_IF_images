@@ -46,8 +46,12 @@ Analysis usind SciMap and ScanPy (Python)
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/3730ed36-8edc-41cc-af70-ec92442f30bd' width='750' alt='MESMER whole-cell segmentation algorithm'/>
 
-Leiden clusters are the math clusters when Clusters from phenotyping are cell-type depended.
+Leiden clusters are the math clusters when real clusters from phenotyping are cell-type depended.
 On heatmap we can clearly see that the most important indicator is good segmentation (never overlapping the cells with marker genes, CD3 (T) and CD20(B), for example)
+On leiden clusters overlaying occurs almost always
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/7bac466c-46f1-47d5-8ad9-1fdfcf846311' width='750' alt='MESMER whole-cell segmentation algorithm'/>
+
 
 
 
