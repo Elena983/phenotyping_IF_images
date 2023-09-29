@@ -16,5 +16,35 @@ Image files from COMET are already stitched and alighned
 
 https://github.com/Elena983/phenotyping_IF_images/assets/68946912/ca15550e-59fe-41db-b4cc-7eee3216bacd
 
-On the video you may see cells with nucleus and membrane as well as the cells are with only a membrane without nucleos (no DAPI).
+On the video you may see cells with nuclei and membrane as well as the cells are with only a membrane without nuclei (no DAPI).
+
+Markers
+
+1, DAPI
+2, Foxp3
+3, CD68
+4, aSMA may be considered as membrane
+5, CD31 membrane
+6, CD38
+7, IDO-1
+8, s100
+9, CD11c
+10, PD-L1 
+11, Ki-67
+12, CD8 - membrane
+13, PD-L1
+14, CD4 - membrane
+15, CK
+16, CD3 - membrane
+17, CD20 - membrane
+18, CD16 - membrane
+19, HLA-DR - membrane
+20, Vimentin
+21, CD45 - membrane
+
+Analysis usind SciMap and ScanPy (Python)
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/3730ed36-8edc-41cc-af70-ec92442f30bd' width='550' alt='MESMER whole-cell segmentation algorithm'/>
+
+
 
