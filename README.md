@@ -1,3 +1,5 @@
+Project done as a Research Assistant at ETH
+
 # phenotyping_IF_images
 Image of the colorectal cancer core from TMA [from](https://lunaphore.com/40-plex-tma-minerva-story/#s=0#w=0#g=0#m=-1#a=-100_-100#v=0.7676_0.499_0.5#o=-100_-100_1_1#p=Q)
 
