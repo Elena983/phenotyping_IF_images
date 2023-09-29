@@ -10,3 +10,11 @@ Image of the colorectal cancer core from TMA [from](https://lunaphore.com/40-ple
 Pipeline to receive the countmatrix performed by MCMICRO pipeline
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/c8ca632a-9166-40ef-b789-a1641ebd1d9d' width='550' alt='MESMER whole-cell segmentation algorithm'/>
+
+Backgroung correction was done by Lunaphore Viewer
+Image files from COMET are already stitched and alighned
+
+https://github.com/Elena983/phenotyping_IF_images/assets/68946912/ca15550e-59fe-41db-b4cc-7eee3216bacd
+
+On the video you may see cells with nucleus and membrane as well as the cells are with only a membrane without nucleos (no DAPI).
+
