@@ -44,7 +44,12 @@ Markers
 
 Analysis usind SciMap and ScanPy (Python)
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/3730ed36-8edc-41cc-af70-ec92442f30bd' width='550' alt='MESMER whole-cell segmentation algorithm'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/3730ed36-8edc-41cc-af70-ec92442f30bd' width='750' alt='MESMER whole-cell segmentation algorithm'/>
+
+Leiden clusters are the math clusters when Clusters from phenotyping are cell-type depended.
+On heatmap we can clearly see that the most important indicator is good segmentation (never overlapping the cells with marker genes, CD3 (T) and CD20(B), for example)
+
+
 
 
 
