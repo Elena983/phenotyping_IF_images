@@ -26,9 +26,9 @@ With only DAPI, we don't see some critical cancer areas.
 
 ![markers without visible nuclei](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/5ab5274a-8086-4427-b2c4-b1629d394add)
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/23311ab0-659d-4d13-b80a-e0c179d7d8c6' width='550' alt='leiden vs real'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/23311ab0-659d-4d13-b80a-e0c179d7d8c6' width='550' alt='cells'/>
 
-So, to capture these cells, we did the whole-cell segmentation MESMER
+So, to capture these cells, we did the whole-cell segmentation MESMER.
 
 Analysis using SciMap and ScanPy (Python)
 Countmartix is 20,000 cells
@@ -42,6 +42,15 @@ On Leiden clusters, overlaying occurs almost always.
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/6095c931-10c4-4f8c-b57e-94a3c88556e8' width='650' alt='subclusters on UMAP'/>
 
 Marker-based cell annotation with [CELESTA](https://github.com/plevritis-lab/CELESTA)
+
+### Quality assessment
+
+CSV is written out as FCS files (R script)
+FCS files are then uploaded onto CellEngine (Primity Bio) to assess data quality visually
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/9abfb4f7-49d8-4beb-9522-6ce60164aef6' width='650' alt='Quality assessment'/>
+
+
 
 
 
