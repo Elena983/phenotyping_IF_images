@@ -54,12 +54,30 @@ FCS files are then uploaded onto CellEngine (Primity Bio) to assess data quality
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/9abfb4f7-49d8-4beb-9522-6ce60164aef6' width='650' alt='Quality assessment'/>
 
-We see the good quality staining
-#Treg    - FoxP3+ CD4+ (+/+)
-#few B cells - CD20+ CD3-  (+/-)
-#T help  - PD-1+ CD4+  (+/+) important T helper subset in CRC
+![Screenshot_37](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/d6676faa-d4a6-42c4-8eab-01d4ec7a767b)
 
+### Working with data
 
+Arcsinh transformed with a cofactor of 1
+Rescaling single-cell data to a 0 - 1 range for each marker
+
+### Plan to do Ongoing
+
+FlowJo
+
+Unsupervised classification of cell types on this scaled data with FlowSOM 
+
+Cell types identifying from each cluster with marker enrichment modeling (MEM)
+
+Cell classification (deep-learning algorithm)
+
+Cellular neighborhood analysis (https://github.com/nolanlab/NeighborhoodCoordination)
+
+Marker correlation analysis (rcorr function of the Hmisc R package)
+
+Cell interaction analysis 
+
+Spatial autocorrelation and Local Moran's I (Voyager R package)
 
 
 
