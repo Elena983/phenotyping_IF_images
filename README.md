@@ -43,6 +43,8 @@ On Leiden clusters, overlaying occurs almost always.
 
 Marker-based cell annotation with [CELESTA](https://github.com/plevritis-lab/CELESTA)
 
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/3eede541-f3a1-4afa-9798-bd3589f30e3a' width='650' alt='classification'/>
+
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/fd3ae64b-b00e-47ca-8ed5-3bd362449dab' width='650' alt='classification'/>
 
 ### Quality assessment
@@ -52,6 +54,10 @@ FCS files are then uploaded onto CellEngine (Primity Bio) to assess data quality
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/9abfb4f7-49d8-4beb-9522-6ce60164aef6' width='650' alt='Quality assessment'/>
 
+We see the good quality staining
+#Treg    - FoxP3+ CD4+ (+/+)
+#few B cells - CD20+ CD3-  (+/-)
+#T help  - PD-1+ CD4+  (+/+) important T helper subset in CRC
 
 
 
