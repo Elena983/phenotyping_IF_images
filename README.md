@@ -43,6 +43,8 @@ On Leiden clusters, overlaying occurs almost always.
 
 Marker-based cell annotation with [CELESTA](https://github.com/plevritis-lab/CELESTA)
 
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/fd3ae64b-b00e-47ca-8ed5-3bd362449dab' width='650' alt='classification'/>
+
 ### Quality assessment
 
 CSV is written out as FCS files (R script)
