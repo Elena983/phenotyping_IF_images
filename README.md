@@ -11,31 +11,37 @@ Pipeline to receive the countmatrix performed by MCMICRO pipeline
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/c8ca632a-9166-40ef-b789-a1641ebd1d9d' width='550' alt='MESMER whole-cell segmentation algorithm'/>
 
-Backgroung correction was done by Lunaphore Viewer
-Image files from COMET are already stitched and alighned
+Lunaphore Viewer performed background correction.
+Image files from COMET are already stitched and aligned.
 
 https://github.com/Elena983/phenotyping_IF_images/assets/68946912/ca15550e-59fe-41db-b4cc-7eee3216bacd
 
-On the video you may see cells with nuclei and membrane as well as the cells are with only a membrane without nuclei (no DAPI).
+In the video, you may see cells with nuclei and membrane and those with only a membrane without nuclei (no DAPI).
 
 Markers
 
 ![Markers](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/ba034a4e-df9a-4476-bbfa-45ea174784a6)
 
-With only DAPI we don't see some important cancer areas
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/e4e21a2b-f68a-4171-8c95-e0897fc9af9a' width='750' alt='areas without DAPI'/>
+With only DAPI, we don't see some critical cancer areas.
 
-Analysis usind SciMap and ScanPy (Python)
-Countmartix is 20 000 cells
+![markers without visible nuclei](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/5ab5274a-8086-4427-b2c4-b1629d394add)
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/3730ed36-8edc-41cc-af70-ec92442f30bd' width='750' alt='leiden vs real'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/23311ab0-659d-4d13-b80a-e0c179d7d8c6' width='550' alt='leiden vs real'/>
 
-Leiden clusters are the math clusters when real clusters from phenotyping are cell-type depended.
-On heatmap we can clearly see that the most important indicator is good segmentation (never overlapping the cells with marker genes, CD3 (T) and CD20(B), for example)
-On leiden clusters overlaying occurs almost always
+So, to capture these cells, we did the whole-cell segmentation MESMER
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/6095c931-10c4-4f8c-b57e-94a3c88556e8' width='750' alt='subclusters on UMAP'/>
+Analysis using SciMap and ScanPy (Python)
+Countmartix is 20,000 cells
 
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/3730ed36-8edc-41cc-af70-ec92442f30bd' width='650' alt='leiden vs real'/>
+
+Leiden clusters are the math clusters when real clusters from phenotyping are cell-type dependent.
+On the heatmap, we can clearly see that the most critical indicator is good segmentation (never overlapping the cells with marker genes, CD3 (T) and CD20(B), for example)
+On Leiden clusters, overlaying occurs almost always.
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/6095c931-10c4-4f8c-b57e-94a3c88556e8' width='650' alt='subclusters on UMAP'/>
+
+Marker-based cell annotation with [CELESTA](https://github.com/plevritis-lab/CELESTA)
 
 
 
