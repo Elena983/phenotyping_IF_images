@@ -32,7 +32,7 @@ So, to capture these cells, we did the whole-cell segmentation MESMER.
 
 Run pipeline on Linux via NextFlow
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/0a1c12ad-816d-4c24-9030-2fc105850a54' width='650' alt='pipeline'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/0a1c12ad-816d-4c24-9030-2fc105850a54' width='350' alt='pipeline'/>
 
 
 Analysis using SciMap and ScanPy (Python)
