@@ -30,6 +30,11 @@ With only DAPI, we don't see some critical cancer areas.
 
 So, to capture these cells, we did the whole-cell segmentation MESMER.
 
+Run pipeline on Linux via NextFlow
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/0a1c12ad-816d-4c24-9030-2fc105850a54' width='650' alt='pipeline'/>
+
+
 Analysis using SciMap and ScanPy (Python)
 Countmartix is 20,000 cells
 
@@ -58,8 +63,6 @@ FCS files are then uploaded onto CellEngine (Primity Bio) to assess data quality
 
 ### Working with data
 
-Arcsinh transformed with a cofactor of 1
-Rescaling single-cell data to a 0 - 1 range for each marker
 
 ### Plan to do Ongoing
 
