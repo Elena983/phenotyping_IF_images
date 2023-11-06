@@ -1,0 +1,39 @@
+from PIL import Image
+
+# Load the TIFF image
+image = Image.open("/Users/melnike/Desktop/CRC.ome.tif")
+
+# Define the tile size (e.g., 100x100 pixels)
+tile_size = (600, 600)
+
+# Define the overlap size (e.g., 20 pixels)
+overlap = 30
+
+# Calculate the effective tile size considering overlap
+effective_tile_width = tile_size[0] - overlap
+effective_tile_height = tile_size[1] - overlap
+
+# Calculate the number of rows and columns
+num_rows = (image.height + overlap) // effective_tile_height
+num_columns = (image.width + overlap) // effective_tile_width
+
+# Iterate over the image and crop into overlapping tiles
+for i in range(num_rows):
+    for j in range(num_columns):
+        x1 = j * effective_tile_width
+        y1 = i * effective_tile_height
+        x2 = x1 + tile_size[0]
+        y2 = y1 + tile_size[1]
+        
+        if x2 > image.width:
+            x1 -= (x2 - image.width)
+            x2 = image.width
+        if y2 > image.height:
+            y1 -= (y2 - image.height)
+            y2 = image.height
+        
+        tile = image.crop((x1, y1, x2, y2))
+        tile.save(f"/Users/melnike/Desktop/tiles/tile_{i}_{j}.tif")
+
+# Close the original image
+image.close()
