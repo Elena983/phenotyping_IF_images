@@ -82,7 +82,7 @@ Transfer it to FlowJo to convert CSV to FCS (Drag and Drop) to assess data quali
 
 FlowSom Algorithm assigns a cluster number for each cell, as MEM calls it by the most and least expressed genes in it.
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/59168a63-1ae0-48f7-9d7f-2a34dfbc38d0' width='650' alt='FlowSom'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/59168a63-1ae0-48f7-9d7f-2a34dfbc38d0' width='750' alt='FlowSom'/>
 
 It may be applied via the FlowJo plugin or in R.
 In FlowJo, we may see the spatial distribution of each cluster.
@@ -106,21 +106,21 @@ Tool for imaging clusters in space
 Input for Voyager tool to create SFE object
 Create 2 files from the clustering output
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/7f3d5cfe-e6d3-4b1f-99ab-678253b71c9f' width='650' alt='SFE'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/7f3d5cfe-e6d3-4b1f-99ab-678253b71c9f' width='850' alt='SFE'/>
 
 I found 2 clusters that should be excluded.
 
 Immune/Cancer cells CD3+CK+, cluster where immune and cancer genes are highly expressed
 Unstained cells - no markers
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/f3c955e5-9899-492d-a9ea-99d467f99f3a' width='450' alt='excluded clasters'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/f3c955e5-9899-492d-a9ea-99d467f99f3a' width='650' alt='excluded clasters'/>
 
 Excluded clusters among all cells (highlight the clusters of interest)
 
-COMET data is subject to noise from several sources including segmentation artifacts, nonspecific staining, and imperfect tissue processing. 
+COMET data is subject to noise from several sources, including segmentation artifacts, nonspecific staining, and imperfect tissue processing. 
 These factors can limit the accurate quantification of signal intensity and impede accurate cell annotation.
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/5f6f732a-b4ca-47de-b298-f04c6daa94c8' width='450' alt='all clasters'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/5f6f732a-b4ca-47de-b298-f04c6daa94c8' width='650' alt='all clasters'/>
 
 
 
