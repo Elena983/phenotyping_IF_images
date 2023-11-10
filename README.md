@@ -62,11 +62,13 @@ FCS files are then uploaded onto CellEngine (Primity Bio) to assess data quality
 ![Screenshot_37](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/d6676faa-d4a6-42c4-8eab-01d4ec7a767b)
 
 ### Working with data
-
+Checking the background value
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/6edc3924-1bac-4257-b209-8899929acd6f' width='650' alt='bakground'/>
 
 ### Plan to do Ongoing
 
 FlowJo
+
 
 Unsupervised classification of cell types on this scaled data with FlowSOM 
 
