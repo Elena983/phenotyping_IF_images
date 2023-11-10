@@ -78,7 +78,7 @@ Transfer it to FlowJo to convert CSV to FCS (Drag and Drop) to assess data quali
 
 ![Screenshot_37](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/d6676faa-d4a6-42c4-8eab-01d4ec7a767b)
 
-##FlowSom Clustering and MEM 
+## FlowSom Clustering and MEM 
 
 FlowSom Algorithm assigns a cluster number for each cell, as MEM calls it by the most and least expressed genes in it.
 
@@ -99,9 +99,7 @@ Cell types identified from each cluster with marker enrichment modeling (MEM)
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/4e09468b-e835-49a0-8e6a-12a6113be53e' width='650' alt='heatmap MEM'/>
 
-##Cell types identified from each cluster with marker enrichment modeling (MEM)
-
-Tool for imaging clusters in space
+## Tool for imaging clusters in space
 
 Input for Voyager tool to create SFE object
 Create 2 files from the clustering output
@@ -113,29 +111,63 @@ I found 2 clusters that should be excluded.
 Immune/Cancer cells CD3+CK+, cluster where immune and cancer genes are highly expressed
 Unstained cells - no markers
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/f3c955e5-9899-492d-a9ea-99d467f99f3a' width='650' alt='excluded clasters'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/f3c955e5-9899-492d-a9ea-99d467f99f3a' width='850' alt='excluded clasters'/>
 
 Excluded clusters among all cells (highlight the clusters of interest)
 
 COMET data is subject to noise from several sources, including segmentation artifacts, nonspecific staining, and imperfect tissue processing. 
 These factors can limit the accurate quantification of signal intensity and impede accurate cell annotation.
 
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/5f6f732a-b4ca-47de-b298-f04c6daa94c8' width='650' alt='all clasters'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/5f6f732a-b4ca-47de-b298-f04c6daa94c8' width='850' alt='all clasters'/>
 
+Cell density
 
+![density](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/daa5e2d1-4438-43e5-8561-8de070c24627)
+
+Compute var/mean gene-level metrics, Poisson distribution. 
+
+Compute some gene-level metrics for each of the 20 genes
+In contrast to RNA-based methods, 
+the fields in the matrix represent intensities rather than counts
+
+![poisson](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/8b5ad3b5-c943-4401-a70a-4b89cac5fa4d)
+
+Genes with the highest Moran’s I statistic,  presence, and strength of spatial autocorrelation
+Plot the normalized intensity for these genes in space.
+
+The vertical line in each plot represents the observed Moran’s I while the density represents the Moran’s I statistic for each of the random permutations of the data.
+
+If the vertical line representing the observed Moran's I fall within the bulk of the density distribution, it suggests that the spatial autocorrelation in the data is not significantly different from what would be expected by random chance. 
+In other words, the data has no strong spatial clustering or dispersion evidence.
+On the other hand, if the vertical line falls in the tails (extremes) of the density distribution, it suggests that the observed Moran's I is significantly different from random chance. 
+This indicates the presence of spatial autocorrelation. 
+The direction of the deviation (left or right tail) can provide information about the nature of spatial autocorrelation (positive or negative spatial autocorrelation).
+Each of these plots suggests that the Moran’s I statistic is significant.
+
+![moran](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/63a2d2a2-2bf3-4d62-b8ba-ccd0e892aca5)
+
+Assess how similar observed values are to their neighbors.
+
+When the variable is centered, the plot is divided into 4 quadrants defined by the horizontal line y = 0 and the vertical line x = 0. 
+Points in the upper right (or high-high) and lower left (or low-low) quadrants indicate positive spatial association, 
+and points in the lower right (or high-low) and upper left (or low-high) quadrants include observations that exhibit negative spatial association.
+
+![4](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/31894256-4221-4c76-aff8-4222c66886aa)
+
+DEGs
+Normalized expression of the top 5 genes in space (computing needs RAM resources)
+
+![degs](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/760e07fb-3c29-4d8c-93b0-4ed0490670db)
 
 ### Plan to do Ongoing
 
-
-Cell classification (deep-learning algorithm)
+Cell classification (deep-learning algorithm STELLAR)
 
 Cellular neighborhood analysis (https://github.com/nolanlab/NeighborhoodCoordination)
 
 Marker correlation analysis (rcorr function of the Hmisc R package)
 
-Cell interaction analysis 
-
-Spatial autocorrelation and Local Moran's I (Voyager R package)
+Cell interaction analysis
 
 
 
