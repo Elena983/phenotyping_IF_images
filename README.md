@@ -78,6 +78,27 @@ Transfer it to FlowJo to convert CSV to FCS (Drag and Drop) to assess data quali
 
 ![Screenshot_37](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/d6676faa-d4a6-42c4-8eab-01d4ec7a767b)
 
+##FlowSom Clustering and MEM 
+
+FlowSom Algorithm assigns a cluster number for each cell, as MEM calls it by the most and least expressed genes in it.
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/59168a63-1ae0-48f7-9d7f-2a34dfbc38d0' width='650' alt='FlowSom'/>
+
+It may be applied via the FlowJo plugin or in R.
+In FlowJo, we may see the spatial distribution of each cluster.
+
+Cell localization by cluster on FlowSom (images need to be rotated 180) in space
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/698e0f7c-4325-4341-af05-5b5f760d1a19' width='650' alt='space'/>
+
+FlowSom clusters look great on UMAP axes
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/96d3b510-c90f-4093-abf8-0b1630dd4f14' width='650' alt='UMAP'/>
+
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/96d3b510-c90f-4093-abf8-0b1630dd4f14' width='650' alt='UMAP'/>
+
+
 
 ### Plan to do Ongoing
 
