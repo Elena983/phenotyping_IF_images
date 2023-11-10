@@ -130,8 +130,7 @@ Compute some gene-level metrics for each of the 20 genes
 In contrast to RNA-based methods, 
 the fields in the matrix represent intensities rather than counts
 
-![poisson](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/8b5ad3b5-c943-4401-a70a-4b89cac5fa4d)
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/f3c955e5-9899-492d-a9ea-99d467f99f3a' width='450' alt='excluded clasters'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/8b5ad3b5-c943-4401-a70a-4b89cac5fa4d' width='450' alt='poisson'/>
 
 Genes with the highest Moran’s I statistic,  presence, and strength of spatial autocorrelation
 Plot the normalized intensity for these genes in space.
