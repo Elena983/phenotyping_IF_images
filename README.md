@@ -131,6 +131,7 @@ In contrast to RNA-based methods,
 the fields in the matrix represent intensities rather than counts
 
 ![poisson](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/8b5ad3b5-c943-4401-a70a-4b89cac5fa4d)
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/f3c955e5-9899-492d-a9ea-99d467f99f3a' width='450' alt='excluded clasters'/>
 
 Genes with the highest Moran’s I statistic,  presence, and strength of spatial autocorrelation
 Plot the normalized intensity for these genes in space.
@@ -152,7 +153,7 @@ When the variable is centered, the plot is divided into 4 quadrants defined by t
 Points in the upper right (or high-high) and lower left (or low-low) quadrants indicate positive spatial association, 
 and points in the lower right (or high-low) and upper left (or low-high) quadrants include observations that exhibit negative spatial association.
 
-![4](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/31894256-4221-4c76-aff8-4222c66886aa)
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/31894256-4221-4c76-aff8-4222c66886aa' width='450' alt='4'/>
 
 DEGs
 Normalized expression of the top 5 genes in space (computing needs RAM resources)
