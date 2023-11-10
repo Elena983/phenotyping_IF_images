@@ -52,18 +52,32 @@ Marker-based cell annotation with [CELESTA](https://github.com/plevritis-lab/CEL
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/fd3ae64b-b00e-47ca-8ed5-3bd362449dab' width='650' alt='classification'/>
 
+### Working with data
+
+Checking the background value
+It is still not 0
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/6edc3924-1bac-4257-b209-8899929acd6f' width='650' alt='background'/>
+
+#in processing 
+So I will implement the BaSiC module on ImageJ (deploying during the COMET run as later they will be deleted by software)
+To do this, I need to receive tiles. 
+Then, apply the ashlar module for stitching and aligning.
+
+After doing this, one starts the MCMICRO pipeline from the segmentation algorithm.
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/795ff337-69d7-4977-b4e4-097a137810b2' width='650' alt='output'/>
+
+Obtaining the countmatrix.csv
+
 ### Quality assessment
 
-CSV is written out as FCS files (R script)
-FCS files are then uploaded onto CellEngine (Primity Bio) to assess data quality visually
+Transfer it to FlowJo to convert CSV to FCS (Drag and Drop) to assess data quality visually.
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/9abfb4f7-49d8-4beb-9522-6ce60164aef6' width='650' alt='Quality assessment'/>
 
 ![Screenshot_37](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/d6676faa-d4a6-42c4-8eab-01d4ec7a767b)
 
-### Working with data
-Checking the background value
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/6edc3924-1bac-4257-b209-8899929acd6f' width='650' alt='bakground'/>
 
 ### Plan to do Ongoing
 
@@ -72,7 +86,7 @@ FlowJo
 
 Unsupervised classification of cell types on this scaled data with FlowSOM 
 
-Cell types identifying from each cluster with marker enrichment modeling (MEM)
+Cell types identified from each cluster with marker enrichment modeling (MEM)
 
 Cell classification (deep-learning algorithm)
 
