@@ -59,7 +59,7 @@ It is still not 0
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/6edc3924-1bac-4257-b209-8899929acd6f' width='650' alt='background'/>
 
-# in processing 
+### in processing 
 So I will implement the BaSiC module on ImageJ (deploying during the COMET run as later they will be deleted by software)
 To do this, I need to receive tiles. 
 Then, apply the ashlar module for stitching and aligning.
@@ -87,19 +87,19 @@ FlowSom Algorithm assigns a cluster number for each cell, as MEM calls it by the
 It may be applied via the FlowJo plugin or in R.
 In FlowJo, we may see the spatial distribution of each cluster.
 
-# Cell localization by cluster on FlowSom (images need to be rotated 180) in space
+### Cell localization by cluster on FlowSom (images need to be rotated 180) in space
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/698e0f7c-4325-4341-af05-5b5f760d1a19' width='650' alt='space'/>
 
-# FlowSom clusters look great on UMAP axes
+## FlowSom clusters look great on UMAP axes
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/96d3b510-c90f-4093-abf8-0b1630dd4f14' width='650' alt='UMAP'/>
 
-# Cell types identified from each cluster with marker enrichment modeling (MEM)
+## Cell types identified from each cluster with marker enrichment modeling (MEM)
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/4e09468b-e835-49a0-8e6a-12a6113be53e' width='650' alt='heatmap MEM'/>
 
-## Tool for imaging clusters in space
+### Tool for imaging clusters in space
 
 Input for Voyager tool to create SFE object
 Create 2 files from the clustering output
@@ -113,18 +113,18 @@ Unstained cells - no markers
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/f3c955e5-9899-492d-a9ea-99d467f99f3a' width='850' alt='excluded clasters'/>
 
-# Excluded clusters among all cells (highlight the clusters of interest)
+## Excluded clusters among all cells (highlight the clusters of interest)
 
 COMET data is subject to noise from several sources, including segmentation artifacts, nonspecific staining, and imperfect tissue processing. 
 These factors can limit the accurate quantification of signal intensity and impede accurate cell annotation.
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/5f6f732a-b4ca-47de-b298-f04c6daa94c8' width='850' alt='all clasters'/>
 
-# Cell density
+## Cell density
 
 ![density](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/daa5e2d1-4438-43e5-8561-8de070c24627)
 
-# Compute var/mean gene-level metrics, Poisson distribution. 
+## Compute var/mean gene-level metrics, Poisson distribution. 
 
 Compute some gene-level metrics for each of the 20 genes
 In contrast to RNA-based methods, 
@@ -132,9 +132,9 @@ the fields in the matrix represent intensities rather than counts
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/8b5ad3b5-c943-4401-a70a-4b89cac5fa4d' width='450' alt='poisson'/>
 
-## Genes with the highest Moran’s I statistic,  presence, and strength of spatial autocorrelation. 
+### Genes with the highest Moran’s I statistic,  presence, and strength of spatial autocorrelation. 
 
-# Plot the normalized intensity for these genes in space.
+#### Plot the normalized intensity for these genes in space.
 
 The vertical line in each plot represents the observed Moran’s I while the density represents the Moran’s I statistic for each of the random permutations of the data.
 
@@ -150,7 +150,7 @@ Each of these plots suggests that the Moran’s I statistic is significant.
 
 ![moran](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/63a2d2a2-2bf3-4d62-b8ba-ccd0e892aca5)
 
-# Assess how similar observed values are to their neighbors.
+### Assess how similar observed values are to their neighbors.
 
 When the variable is centered, the plot is divided into 4 quadrants defined by the horizontal line y = 0 and the vertical line x = 0. 
 
@@ -158,7 +158,7 @@ Points in the upper right (or high-high) and lower left (or low-low) quadrants i
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/31894256-4221-4c76-aff8-4222c66886aa' width='450' alt='4'/>
 
-# DEGs
+## DEGs
 
 Normalized expression of the top 5 genes in space (computing needs RAM resources)
 
