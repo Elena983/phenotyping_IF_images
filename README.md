@@ -95,18 +95,37 @@ FlowSom clusters look great on UMAP axes
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/96d3b510-c90f-4093-abf8-0b1630dd4f14' width='650' alt='UMAP'/>
 
+Cell types identified from each cluster with marker enrichment modeling (MEM)
+
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/4e09468b-e835-49a0-8e6a-12a6113be53e' width='650' alt='heatmap MEM'/>
+
+##Cell types identified from each cluster with marker enrichment modeling (MEM)
+
+Tool for imaging clusters in space
+
+Input for Voyager tool to create SFE object
+Create 2 files from the clustering output
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/7f3d5cfe-e6d3-4b1f-99ab-678253b71c9f' width='650' alt='SFE'/>
+
+I found 2 clusters that should be excluded.
+
+Immune/Cancer cells CD3+CK+, cluster where immune and cancer genes are highly expressed
+Unstained cells - no markers
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/f3c955e5-9899-492d-a9ea-99d467f99f3a' width='450' alt='excluded clasters'/>
+
+Excluded clusters among all cells (highlight the clusters of interest)
+
+COMET data is subject to noise from several sources including segmentation artifacts, nonspecific staining, and imperfect tissue processing. 
+These factors can limit the accurate quantification of signal intensity and impede accurate cell annotation.
+
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/5f6f732a-b4ca-47de-b298-f04c6daa94c8' width='450' alt='all clasters'/>
 
 
 
 ### Plan to do Ongoing
 
-FlowJo
-
-
-Unsupervised classification of cell types on this scaled data with FlowSOM 
-
-Cell types identified from each cluster with marker enrichment modeling (MEM)
 
 Cell classification (deep-learning algorithm)
 
