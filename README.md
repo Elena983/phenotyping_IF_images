@@ -95,8 +95,7 @@ FlowSom clusters look great on UMAP axes
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/96d3b510-c90f-4093-abf8-0b1630dd4f14' width='650' alt='UMAP'/>
 
-
-<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/96d3b510-c90f-4093-abf8-0b1630dd4f14' width='650' alt='UMAP'/>
+<image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/4e09468b-e835-49a0-8e6a-12a6113be53e' width='650' alt='heatmap MEM'/>
 
 
 
