@@ -1,0 +1,23 @@
+---
+title: "CELESTA"
+author: "Elena Melnik"
+date: "2023-09-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(CELESTA)
+library(Rmixmod)
+library(spdep)
+library(ggplot2)
+library(reshape2)
+library(zeallot)
+
+setwd("~/Desktop/11_markers_phenotyping")
+```
+
+```{r obj}
+prior_marker_info <- read.csv('')
+
+analysis <- CreateCelestaObject(project_title = "11_markers",prior_marker_info,imaging_data)
+```
