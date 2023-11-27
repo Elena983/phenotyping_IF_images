@@ -164,6 +164,9 @@ Normalized expression of the top 5 genes in space (computing needs RAM resources
 
 ![degs](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/760e07fb-3c29-4d8c-93b0-4ed0490670db)
 
+## Delete artifact cells (2 columns in the data)
+And create fewer clusters (see R script) to use them in the NeighborhoodCoordination analysis.
+
 ### Plan to do Ongoing
 
 Cell classification (deep-learning algorithm STELLAR)
