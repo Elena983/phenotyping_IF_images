@@ -106,9 +106,8 @@ Create 2 files from the clustering output
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/7f3d5cfe-e6d3-4b1f-99ab-678253b71c9f' width='850' alt='SFE'/>
 
-I found 2 clusters that should be excluded.
+I found 1 cluster that should be excluded.
 
-Immune/Cancer cells CD3+CK+, cluster where immune and cancer genes are highly expressed
 Unstained cells - no markers
 
 <image src='https://github.com/Elena983/phenotyping_IF_images/assets/68946912/f3c955e5-9899-492d-a9ea-99d467f99f3a' width='850' alt='excluded clasters'/>
@@ -164,18 +163,11 @@ Normalized expression of the top 5 genes in space (computing needs RAM resources
 
 ![degs](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/760e07fb-3c29-4d8c-93b0-4ed0490670db)
 
-## Delete artifact cells (2 columns in the data)
-And create fewer clusters (see R script) to use them in the NeighborhoodCoordination analysis.
+## Delete artifact cells (1 clusters from the data - rows)
 
-### Plan to do Ongoing
+## Define niches with Coordinated Neighborhood Analysis [from](https://github.com/nolanlab/NeighborhoodCoordination/tree/master) 
 
-Cell classification (deep-learning algorithm STELLAR)
-
-Cellular neighborhood analysis (https://github.com/nolanlab/NeighborhoodCoordination)
-
-Marker correlation analysis (rcorr function of the Hmisc R package)
-
-Cell interaction analysis
+![coord](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/8f5fc02e-8106-4aff-adb4-1e38cade33f0)
 
 
 
