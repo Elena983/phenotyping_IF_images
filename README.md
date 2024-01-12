@@ -169,7 +169,8 @@ Normalized expression of the top 5 genes in space (computing needs RAM resources
 
 ![coord](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/8f5fc02e-8106-4aff-adb4-1e38cade33f0)
 
+Defining marker quality 
 
-
+![quality](https://github.com/Elena983/phenotyping_IF_images/assets/68946912/85c07168-d773-464d-bbc5-2de5463abc2f)
 
 
