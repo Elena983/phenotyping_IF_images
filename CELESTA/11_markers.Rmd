@@ -1,0 +1,58 @@
+---
+title: "TIFF to FCS"
+author: "Elena"
+date: "23/08/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(CELESTA)
+library(Rmixmod)
+library(spdep)
+library(ggplot2)
+library(reshape2)
+library(zeallot)
+setwd("/media/Lena/CELESTA/11_markers_phenotyping")
+```
+
+```{r obj}
+prior_marker_info <- read.csv('prior_marker_info.csv')
+imaging_data <- read.csv('imaging_data.csv')
+
+CelestaObj3 <- CreateCelestaObject(project_title = "11_markers",prior_marker_info,imaging_data)
+```
+
+
+```{r Set PrimaryDirectory}
+analysis <- FilterCells(CelestaObj3,
+                          high_marker_threshold=0.9, 
+                          low_marker_threshold=0.5)
+```
+
+
+```{r thresholds}
+### plot expression probability
+PlotExpProb(coords=analysis@coords,
+            marker_exp_prob=analysis@marker_exp_prob,
+            prior_marker_info,
+            save_plot = TRUE) + scale_y_reverse()
+```
+
+```{r assign}
+analysis <- AssignCells(analysis, max_iteration=10, cell_change_threshold=0.01,
+                          high_expression_threshold_anchor=c(0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9),
+                          low_expression_threshold_anchor=c(1,1,1,1,1,1,1,1,1,1,1,1,1),
+                          high_expression_threshold_index=c(0.8, 0.6, 0.8, 0.8, 0.6, 0.8, 0.8, 0.6, 0.8, 0.6, 0.8, 0.8, 0.8),
+                          low_expression_threshold_index = c(1,1,1,1,1,1,1,1,1,1,1,1,1))
+
+```
+
+```{r pressure, echo=FALSE}
+PlotCellsAnyCombination(cell_type_assignment_to_plot=analysis@final_cell_type_assignment[,(analysis@total_rounds+1)],
+                        coords = analysis@coords,
+                        prior_info = prior_marker_info,
+                        cell_number_to_use=c(1,2,3,4),
+                        cell_type_colors=c("yellow","red","blue", 'white'),
+                        test_size=1)
+```
+
